@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E8924573-9A4F-5BEF-AC3C-96D5599CFE71}</ProjectGuid>
+    <ProjectGuid>{DF7BCAD5-B113-74FF-A646-2EA806CE9819}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -51,11 +51,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\AdministradorVD.cs" />
-     <Compile Include="Assets\Scripts\BobinaHelmontz.cs" />
-     <Compile Include="Assets\Scripts\BobinasHelmontz.cs" />
-     <Compile Include="Assets\Scripts\JDM\Calculos.cs" />
-     <Compile Include="Assets\Scripts\JDM\Vector.cs" />
+     <Compile Include="Assets\Bobinas\Tube.cs" />
+     <Compile Include="Assets\Bobinas\VolumenDeTrabajo.cs" />
+     <Compile Include="Assets\CamposVectoriales\Calculos.cs" />
+     <Compile Include="Assets\CamposVectoriales\CampoHelmontz.cs" />
+     <Compile Include="Assets\CamposVectoriales\Vector.cs" />
+     <Compile Include="Assets\Microrobot\Microrobot.cs" />
+     <Compile Include="Assets\ModeloFisico\BobinaHelmontz.cs" />
+     <Compile Include="Assets\ModeloFisico\BobinasHelmontz.cs" />
+     <Compile Include="Assets\ModeloFisico\GeneradorDeTorqueMagnetico.cs" />
+     <Compile Include="Assets\Scripts\Inputs.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
