@@ -15,6 +15,6 @@ public class GeneradorDeFuerzaMagnetico : MonoBehaviour {
 
 
 	public void Desplazar (float Dir_X_F) {
-		rb.AddForce (MRGO.transform.up * Dir_X_F,ForceMode.Acceleration);
+		rb.AddForce (MRGO.transform.up *0.1f*Mathf.Sign(Dir_X_F),ForceMode.Acceleration);
 	}
 }

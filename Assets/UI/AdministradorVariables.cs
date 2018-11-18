@@ -72,7 +72,15 @@ public class AdministradorVariables : MonoBehaviour {
 		textoIHelmontzX.text = "Ix = " + IHelmontzX.ToString("0.00") + "A";
 		textoIHelmontzY.text = "Iy = " + IHelmontzY.ToString("0.00") + "A";
 		textoIHelmontzZ.text = "Iz = " + IHelmontzZ.ToString("0.00") + "A";
-		textoIMaxwell.text = "I = " + IMaxwell.ToString("0.00") + "A";
+
+		float corriente = (float)IMaxwell;
+		string unidad = "A";
+		if (IMaxwell > 1000f) {
+			corriente = corriente / 1000f;
+			unidad = "kA";
+		}
+
+		textoIMaxwell.text = "I = " + corriente.ToString("0.00") + unidad;
 	}
 
 	public void ponerFuerza(){

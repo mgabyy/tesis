@@ -26,6 +26,7 @@ public class BobinasMaxwell : MonoBehaviour {
 
 	public void calcularCorrientes () {
 		I = (F * Mathf.Pow (Maxwell.r, 2)) / (K * Maxwell.n * MR.V * MR.M * CM.u);
+		//Debug.Log(((K * Maxwell.n * MR.V * MR.M * CM.u))+"  " + K +"  " + Maxwell.n +"  " + MR.V +"  " + MR.M +"  " + CM.u0);
 		Maxwell.I = I;
 	}
 

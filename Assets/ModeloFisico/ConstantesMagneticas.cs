@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ConstantesMagneticas : MonoBehaviour {
 
-	public float u0 = 4*Mathf.PI*10e-7f;           //  [N/A^2]
+	public float u0 = 4*Mathf.PI*0.0000001f;           //  [N/A^2]
 	public float ur;                      //  []
 	public float u;        			  //  [N/A^2]
 
