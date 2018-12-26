@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class PanelVistas : MonoBehaviour {
 
-	public GameObject LDC, VM, BHX,BHY,BHZ,BM,MR,EDT;
-	public Toggle T_LDC, T_VM, T_BHX,T_BHY,T_BHZ,T_BM,T_MR,T_EDT;
+	public GameObject LDC, VM, BHX,BHY,BHZ,BM,MR,EDT,CuerpoGO;
+	public Toggle T_LDC, T_VM, T_BHX,T_BHY,T_BHZ,T_BM,T_MR,T_EDT,T_Cuerpo;
 
 	void Start(){
         
@@ -18,46 +18,39 @@ public class PanelVistas : MonoBehaviour {
 		T_BM.isOn = BM.activeSelf;
 		T_MR.isOn = MR.activeSelf;
 		T_EDT.isOn = EDT.activeSelf;
-
-		LDC.SetActive(T_LDC);
-		VM.SetActive(T_VM);
-		BHX.SetActive(T_BHX);
-		BHY.SetActive(T_BHY);
-		BHZ.SetActive(T_BHZ);
-		BM.SetActive(T_BM);
-		MR.SetActive(T_MR);
-		EDT.SetActive(T_EDT);
-
-	}
+        T_Cuerpo.isOn = CuerpoGO.activeSelf;
+    }
 
 	public void Toogle(int opcion){
-		switch (opcion) {
-		case 0:
-			LDC.SetActive(T_LDC.isOn);
-			break;
-		case 1:
-			VM.SetActive(T_VM.isOn);
-			break;
-		case 2:
-			BHX.SetActive(T_BHX.isOn);
-			break;
-		case 3:
-			BHY.SetActive(T_BHY.isOn);
-			break;
-		case 4:
-			BHZ.SetActive(T_BHZ.isOn);
-			break;
-		case 5:
-			BM.SetActive(T_BM.isOn);
-			break;
-		case 6:
-			MR.SetActive(T_MR.isOn);
-			break;
-		case 7:
-			EDT.SetActive(T_EDT.isOn);
-			break;
-
-		}
+        switch (opcion) {
+            case 0:
+                LDC.SetActive(T_LDC.isOn);
+                break;
+            case 1:
+                VM.SetActive(T_VM.isOn);
+                break;
+            case 2:
+                BHX.SetActive(T_BHX.isOn);
+                break;
+            case 3:
+                BHY.SetActive(T_BHY.isOn);
+                break;
+            case 4:
+                BHZ.SetActive(T_BHZ.isOn);
+                break;
+            case 5:
+                BM.SetActive(T_BM.isOn);
+                break;
+            case 6:
+                MR.SetActive(T_MR.isOn);
+                break;
+            case 7:
+                EDT.SetActive(T_EDT.isOn);
+                break;
+            case 8:
+                CuerpoGO.SetActive(T_Cuerpo.isOn);
+                break;
+        }
 
 	}
 

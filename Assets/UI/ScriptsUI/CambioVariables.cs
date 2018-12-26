@@ -35,12 +35,14 @@ public class CambioVariables : MonoBehaviour {
     //PanelDatos
 
     public void CambioTheta(string ns) {
-        T_Theta.text = ns;
+        float nf = float.Parse(ns);
+        T_Theta.text = nf.ToString("0.0");
         cambioEnInputs.CambioTheta(ns);
     }
 
     public void CambioPhi(string ns) {
-        T_Phi.text = ns;
+        float nf = float.Parse(ns);
+        T_Phi.text = nf.ToString("0.0");
         cambioEnInputs.CambioPhi(ns);
     }
 
